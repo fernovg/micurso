@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+
+<body>
+
+    <h1>Funciones</h1>
+
+    <p>
+        Una función es un conjunto de instrucciones que se agrupan para realizar una tarea concreta.
+        Una de sus mayores ventajas es que se pueden reutilizar fácilmente.
+    </p>
+
+    <h4>
+        La estructura básica de una función JavaScript se puede dividir en tres partes:
+    </h4>
+
+    <ol>
+        <li>
+            Nombre: el nombre de la función.
+        </li>
+        <li>
+            Argumentos: las variables o constantes a utilizar.
+        </li>
+        <li>
+            Sentencias: las instrucciones de la función (lo que queremos que haga).
+        </li>
+        <li>
+            Declaraciones de funciones: (describir o definir la función).
+        </li>
+        <li>
+            Llamadas a funciones: (cuando y como dar la orden de que se ejecuten).
+        </li>
+    </ol>
+
+    <script>
+
+        /**
+         * ! ESTRUCTURA
+         * 
+         *!Las funciones en JavaScript se declaran (se definen) mediante la palabra reservada function, seguida
+         *!del nombre de la función. Después se añaden dos paréntesis () en cuyo interior irán los argumentos (si
+         *!procede). Por último, las llaves { } que se utilizan para encerrar todas las sentencias ó instrucciones que
+         *!vamos a ordenar que se ejecuten en nuestra función.
+
+         *? function nombre(argumentos){
+         *?     entencias o instrucciones
+         *? }
+        **/
+
+        /**
+         * ! NOMBRE
+         * 
+         *!Hay algunas reglas a la hora de poner nombre a una función
+         *! --El nombre debe empezar por una letra minúscula y no puede contener espacios.
+         *! --No se pueden usar palabras reservadas para el lenguaje de programación que usemos.
+        **/
+
+        /**
+         * todos: Funciones validas
+        **/
+        function sumar() { }
+        //válido
+
+        function sumar_numeros() { }
+        //válido, guiones bajos para separar palabras
+
+        function sumarNumeros() { }
+        //válido, mayúsculas para separar palabras
+
+        /**
+         * todos: Funciones NO validas
+         * 
+         * !function sumar numeros() { }
+         * !    NO válido, no puede haber espacios 
+         * !function 1suma() { }
+         * !    NO válido, no puede empezar con un número 
+         * !function alert() { }
+         * !    NO válido, "alert" es una palabra reservada de javascript
+         * !function var() { }
+         * !    NO válido, "var" es una palabra reservada de javascript
+        **/
+
+
+        /**
+         * ! ARGUMENTOS
+         * 
+         *!Los argumentos son una serie de valores que no hemos definido dentro de la función, sino que se reciben de
+         *!otra parte, de otra función u otro enunciado. Pueden ser números o cadenas de texto indistintamente. Se
+         *!especifican entre los paréntesis ( ) que van detrás del nombre de la función y van separados por comas.
+         *!     No todas las funciones necesitan argumentos para funcionar
+        **/
+
+        function sumar(num1, num2) {
+        //los argumentos de esta funcion son: num1 y num2 
+        }
+        
+        function cambiar(text1, text2, text3) {
+        //los argumentos de esta funcion son: text1, text2 y text3 
+        }
+
+
+        /**
+         * ! SENTENCIAS
+         * 
+         *!Esta es la parte de la función donde debemos incluir las instrucciones y operaciones necesarias para el
+         *!cometido de la función. Van justo después de los paréntesis encerradas entre llaves { } y separadas entre
+         *!especifican entre los paréntesis ( ) que van detrás del nombre de la función y van separados por comas.
+         *!si por el símbolo punto y coma ; , o separándolas en líneas diferentes.
+        **/
+
+        function sumar() { 
+            var primer_numero = 3;
+            var segundo_numero = 2;
+            var total_suma = primer_numero + segundo_numero;
+            alert(total_suma);
+        }
+
+        /**
+         * ! DECLARACCIONES
+         * 
+         *!Para declarar una función (definir como será) lo haremos una sola vez
+        **/
+
+        function saludo() {
+            alert('Hola y bienvenido.');
+        }
+
+        /**
+         * ! LLAMADAS
+         * 
+         *!Al llamar a una función lo que hacemos es decir que se ejecuten las sentencias ó instrucciones que hemos
+         *!definido anteriormente para esa función. Para llamarla solo tenemos que nombrarla con los paréntesis a
+         *!continuación y los argumentos (si fueran necesarios) dentro de los paréntesis:
+        **/
+
+        saludo();
+
+    </script>
+
+</body>
+
+</html>

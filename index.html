@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi curso</title>
+</head>
+
+<body>
+
+    <!-- * Ejemplo programacion:  -->
+
+    <!--!     -->
+
+    <h1>Introducción a la programación</h1>
+
+    <h2>JavaScript </h2>
+
+    <p>es un lenguaje de programación complejo que nos permite desarrollar tanto para el mundo frontend como para el mundo backend de la web. A pesar de su complejidad, JavaScript actúa como cualquier otro lenguaje de programación en el sentido de que nos permite comunicarnos con la máquina a través de una serie de reglas conocidas como sintaxis.</p>
+
+    <h3>¿Cómo declarar variables en JavaScript?</h3>
+
+    <div>
+        <h4>var</h4>
+        <p>La palabra clave var es una abreviación de variable y es la manera antigua de declarar que lo que estamos escribiendo es este tipo de variable javascript. Para usar esta palabra clave, podemos escribir la siguiente línea de código:</p>
+        <p>var x=1</p>
+    </div>
+
+    <div>
+        <h4>let</h4>
+        <p>La palabra clave let, a diferencia de la palabra clave var, nos permite declarar variables en JavaScript que son ciertas a nivel del bloque. Esto también se conoce en inglés como block scoped. Entonces, esto hace que las variables definidas con let solo sean ciertas dentro de un bloque, introducido por las llaves { }.</p>
+        <p>let y = 1;</p>
+    </div>
+
+    <div>
+        <h4>const</h4>
+        <p>Al igual que la palabra clave let, const nos permite establecer variables a nivel de bloque. La diferencia entre estas dos palabras clave es que const hace referencia a una constante.</p>        
+        <p>const i = 7;</p>
+    </div>
+
+    <p>Existen tres maneras de declarar variables en JavaScript, cada una utiliza una palabra clave diferente: let, var y const.</p>
+
+    <h3>Datos y operadores en JavaScript</h3>
+
+    <p>Un tipo de datos sirve para definir el tipo y el comportamiento de los datos: En otras palabras, con esto podemos decirle 
+        al compilador o al intérprete cómo pretendemos usar una parte de los datos. La mayoría de los lenguajes de 
+        programación admiten tipos de datos básicos como números, booleanos, cadenas, etc.
+    </p>
+
+    <ol>
+        <li>
+            Número (number): El tipo number representa tanto números enteros como de punto flotante.
+        </li>
+        <li>BigInt: En JavaScript, el tipo “number” no puede representar valores enteros mayores que (253-1) (eso es 9007199254740991), o menor que -(253-1) para negativos. Es una limitación técnica causada por su representación interna. Para la mayoría de los propósitos es suficiente, pero a veces necesitamos números realmente grandes. Por ejemplo, para criptografía o marcas de tiempo de precisión de microsegundos.</li>
+        <li>String: Un string en JavaScript es una cadena de caracteres y debe colocarse entre comillas.</li>
+        <li>Boolean (tipo lógico): El tipo booleano tiene sólo dos valores posibles: true y false.</li>
+        <li>El valor “null” (nulo): El valor especial null no pertenece a ninguno de los tipos descritos anteriormente.</li>
+        <li>El valor “undefined” (indefinido): El valor especial undefined también se distingue. Hace un tipo propio, igual que null. El significado de undefined es “valor no asignado”.</li>
+        <li>Object y Symbol: El tipo object (objeto) es especial. Todos los demás tipos se llaman “primitivos” porque sus valores pueden contener una sola cosa (ya sea una cadena, un número o lo que sea). Por el contrario, los objetos se utilizan para almacenar colecciones de datos y entidades más complejas. El tipo symbol (símbolo) se utiliza para crear identificadores únicos para los objetos.</li>
+    </ol>
+
+    <h3>Tipos de operadores de JavaScript</h3>
+
+    <ol>
+        <li>Operadores Aritméticos</li>
+        <li>Operadores de Asignación</li>
+        <li>Operadores de cadena</li>
+        <li>Operadores de comparación</li>
+        <li>Operadores lógicos</li>
+        <li>Operadores especiales</li>
+    </ol>
+
+     /**
+         * ! If para tu nivel de escalaridad
+         * ! Uso de operador logico y (&&) para comparar   <= >=
+         *!primaria y secundaria, prepa o carrera 
+         *!primaria 6 a 12 años
+         *!secundaria 13 a 15 años
+         *! prepa 16 a 18 años
+         *!carrera 19 a 24 años
+         *!sino trabajando
+        **/
+
+    <script>
+        var x;
+        // x = prompt("Ingrese numero uno: ");
+        x = parseInt(x);
+        console.log(x + 10);
+        // let nombre;
+        // let edad;
+        // nombre = prompt('Ingrese su nombre:');
+        // edad = prompt('Ingrese su edad:');
+        // document.write('Hola ');
+        // document.write(nombre);
+        // document.write(' asi que tienes ');
+        // document.write(edad);
+        // document.write(' años');
+        // Conceptos básicos: variables, tipos de datos y operadores
+
+            // variables:
+        // var nombre = "Juan"; //string
+        // var edad = 30; //number || int || float
+        var esMayorDeEdad = true; //boolean
+
+        let apellido = "Vega";
+        let peso = 67.81;
+        let status = false;
+
+        
+            // operadores aritméticos:
+        var suma = 10 + 5; //suma
+        var resta = 10 - 5; //resta
+        var multiplicacion = 10 * 5; //multiplicacion 
+        var division = 10 / 5; //division
+
+            // operadores asignacion:
+        let a = 10;
+        let b = 5;
+        a += b; //suma
+        a -= b; //resta
+        a *= b; //multiplicacion 
+        a /= b; //division
+
+            // operadores de cadenas :
+        let result = "If" + "Geek" + "Then"; //se usa para concatenar (agregar) cadenas de texto o también llamados strings
+        console.log(result);
+
+            // operadores de comparación:
+
+                //Operador igual (==), devuelve verdadero si los operandos son iguales. Solo compara los valores de los operandos, ignorando su tipo al comparar.
+        console.log(2==4);
+        console.log("2"==2);
+
+                //Operador no igual (!=), devuelve verdadero si los operandos no son iguales. También ignora el tipo de operandos al comparar.
+        console.log(2 != 4);
+        console.log(2 != "2");
+
+
+                //Operador de igualdad estricta (===), devuelve verdadero si los operandos son iguales. Compara tanto los valores como los tipos de operandos mientras compara.
+        console.log(2===2);
+        console.log("2"===2);
+        
+                //Operador estricto no igual (!==), devuelve verdadero si los operandos no son iguales. También compara ambos: los valores y el tipo de operandos mientras compara.
+        console.log(2 !== 4);
+        console.log(2 !== "2");
+
+
+                //Operador mayor que (>), devuelve verdadero si el operando izquierdo es mayor que el operando derecho.
+        console.log(10>4);
+        console.log(5>5);
+
+                //Operador mayor que o igual (>=), devuelve verdadero si el operando izquierdo es mayor o igual que el operando derecho.
+        console.log(10 >= 4);
+        console.log(5 >= 5);
+    
+                //Operador menor que (<), devuelve verdadero si el operando izquierdo es menor que el operando derecho.
+        console.log(10<4);
+        console.log(5<5);
+        
+                //Operador menor o igual (<=), devuelve verdadero si el operando izquierdo es menor o igual que el operando derecho.
+        console.log(10 <= 4);
+        console.log(5 <= 5);
+
+            // operadores logicos :
+        let hour = 12;
+        let minute = 30;
+        let lleno = true;
+
+        console.log(hour == 12 || minute == 30) ; //OR 
+        console.log(hour == 12 && minute == 30); //AND
+        console.log(!lleno); //NOt lo contrario a lo que es
+
+        // Estructuras de control: bucles y condicionales
+
+        //bucle for
+        for (var i = 0; i < 9; i++) {
+            console.log("El valor de i es: " + i);
+        }
+
+        var i = 0;
+        while (i <= 5) {
+            console.log("wEl valor de i es: " + i);
+            i++;
+        }
+
+        // if
+        const edad = prompt("Ingrese su edad:");
+        if (edad >= 18 && edad <= 60) {
+            console.log("Es mayor de edad");
+        } else if (edad >= 61) {
+            console.log("Es adulto mayor");
+        }
+        else {
+            console.log("Es menor de edad");
+        }
+
+
+
+        //todo
+
+    </script>
+
+
+</body>
+
+</html>
