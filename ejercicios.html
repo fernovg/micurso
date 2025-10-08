@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+    <link rel="stylesheet" href="actividades.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1d3557;
+            margin-bottom: 2rem;
+        }
+
+        .actividades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .actividad {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .actividad:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .descripcion h2 {
+            color: #457b9d;
+            margin: 0 0 0.3rem;
+        }
+
+        .descripcion p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .resultado {
+            background-color: #f1f5f9;
+            padding: 0.8rem 1rem;
+            border-left: 4px solid #457b9d;
+            border-radius: 6px;
+        }
+
+        .resultado p {
+            margin: 0.2rem 0;
+            font-size: 0.95rem;
+        }
+
+        small {
+            color: #6c757d;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Actividades de JavaScript
+    </h1>
+
+    <section class="actividades">
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Compra con IVA</h2>
+                <p>Has hecho una compra y sabes el precio del producto y su IVA. Haz un script que calcule el precio
+                    total.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Precio:</strong> 200€</p>
+                <p><strong>IVA:</strong> 21%</p>
+                <p><strong>Total:</strong> 242€ <small>(200 + 21*200/100)</small></p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Área y perímetro de un cuadrado</h2>
+                <p>En una variable tienes el lado de un cuadrado. Calcula el área y el perímetro.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Lado:</strong> 40</p>
+                <p><strong>Área:</strong> 1600</p>
+                <p><strong>Perímetro:</strong> 160</p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Saludo con nombre</h2>
+                <p>Escribe un programa que lea el nombre del usuario y salude con “Hola [nombre]”.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Usuario:</strong> Juan</p>
+                <p><strong>Salida:</strong> Hola Juan.</p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Media de tres números</h2>
+                <p>Pide tres números enteros y muestra la media.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Números:</strong> 3, 2, 4</p>
+                <p><strong>Media:</strong> 3</p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Consumo de combustible</h2>
+                <p>Solicita kilómetros recorridos y litros consumidos. Calcula el consumo por kilómetro.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Litros:</strong> 20</p>
+                <p><strong>Kilómetros:</strong> 80</p>
+                <p><strong>Consumo:</strong> 0.25 l/km</p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Conversión a segundos</h2>
+                <p>Convierte una medida de tiempo dada en horas y minutos a segundos.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Horas:</strong> 2</p>
+                <p><strong>Minutos:</strong> 30</p>
+                <p><strong>Resultado:</strong> 9000 segundos</p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Unidades y decenas</h2>
+                <p>Pide un número de dos dígitos y muestra sus unidades y decenas usando solo operaciones aritméticas.
+                </p>
+            </div>
+            <div class="resultado">
+                <p><strong>Número:</strong> 45</p>
+                <p><strong>Unidades:</strong> 5</p>
+                <p><strong>Decenas:</strong> 4</p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Receta de tortilla de patatas</h2>
+                <p>Dado el número de comensales, calcula las cantidades de ingredientes necesarias.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Comensales:</strong> 5</p>
+                <p><strong>Patatas:</strong> 1 kg</p>
+                <p><strong>Huevos:</strong> 5</p>
+                <p><strong>Cebolla:</strong> 300 g</p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Intercambio de variables</h2>
+                <p>Intercambia el valor de dos variables sin usar arrays ni asignación múltiple.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Antes:</strong> varUno = 10, varDos = 30</p>
+                <p><strong>Después:</strong> varUno = 30, varDos = 10</p>
+            </div>
+        </article>
+
+        <article class="actividad">
+            <div class="descripcion">
+                <h2>Número par o impar</h2>
+                <p>Escribe un script que devuelva true si un número es par y false si es impar, sin condicionales.</p>
+            </div>
+            <div class="resultado">
+                <p><strong>Número:</strong> 50</p>
+                <p><strong>¿Es par?:</strong> true</p>
+            </div>
+        </article>
+
+    </section>
+
+</body>
+
+</html>
